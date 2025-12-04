@@ -1,416 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Store</title>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Book Store</title>
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-    <!-- Top border -->
-    <div class="top-line"></div>
 
-    <!-- ================= HEADER - Ibraheem ================= -->
-    <header>
+      <!-- ================= HEADER - Ibraheem ================= -->
+     <header>
+      <div class="header-inner">
+          <div class="logo">
+              <img src="images/logo.png" alt="Book Store Logo">
+          </div>
 
-    </header>
+          <!-- Burger Menu Button(for mobiles and small screens) -->
+          <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
 
-    <!-- ================= CONTAINER ================= -->
-    <div id="container">
+          <nav class="main-nav" id="mainNav">
+              <a href="#welcome">Home</a>
+              <a href="#aboutUs">About</a>
+              <a href="#featured">Featured</a>
+              <a href="#arrivals">Arrivals</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#blog">Blog</a>
+          </nav>
 
-        <!-- ======================= Welcome - Ibraheem =========================== -->
-        <section id="welcome">
-            
-        </section>
+          <div class="nav-icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-moon" id="darkModeToggle" style="cursor: pointer;"></i>
+          </div>
+      </div>
+  </header>
 
-        <!-- ====================== SERVICES - Ibraheem ======================== -->
-        <section id="services">
-            
-        </section>
+      <!-- ================= CONTAINER ================= -->
+      <div id="container">
 
-        <!-- ======================= ABOUT Us - Ibraheem ========================== -->
-        <section id="aboutUs">
-            
-        </section>
+          <!-- ======================= Welcome - Ibraheem =========================== -->
+          <section id="welcome">
+              <div class="welcome-inner">
 
-        <!-- ==================== FEATURED BOOKS - Khaled ==================== -->
-        <section id="featured" class="section">
-            <h2 class="section-title">Featured Books</h2>
-            <div class="featured-wrapper">
-                <div class="featured-row">
-                    <!-- Book 1 -->
-                    <article class="book-card">
-                        <img src="images/book_1.jpg" alt="Featured Book 1">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <div class="welcome-left">
+                     <h1>WELCOME TO</h1>
+                      <h1><span>BOOK STORE</span></h1>
+                      <p class="welcome-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cumque
+                          dolore sapiente porro autem sit obcaecati, voluptate eveniet incidunt.
+                          Lorem ipsum dolor sit amet consectetur .
 
-                    <!-- Book 2 -->
-                    <article class="book-card">
-                        <img src="images/book_2.jpg" alt="Featured Book 2">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                      </p>
+                      <button class="btn main-btn">Learn More</button>
+                  </div>
 
-                    <!-- Book 3 -->
-                    <article class="book-card">
-                        <img src="images/book_3.jpg" alt="Featured Book 3">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <div class="welcome-right">
+                      <div class="shelf">
+                          <img src="images/table.png" alt="Books on shelf">
+                      </div>
+                  </div>
+              </div>
 
-                    <!-- Book 4 -->
-                    <article class="book-card">
-                        <img src="images/book_4.jpg" alt="Featured Book 4">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+          </section>
 
-                    <!-- Book 5 -->
-                    <article class="book-card">
-                        <img src="images/book_5.jpg" alt="Featured Book 5">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+          <!-- ====================== SERVICES - Ibraheem ======================== -->
+          <section id="services">
+                  <div class="services-inner">
 
-                    <!-- Book 6 -->
-                    <article class="book-card">
-                        <img src="images/book_6.jpg" alt="Featured Book 6">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <article class="service-card">
+                      <i class="fa-solid fa-truck-fast service-icon"></i>
+                      <h3>Fast Delivery</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </article>
 
-                    <!-- Book 7 -->
-                    <article class="book-card">
-                        <img src="images/book_7.png" alt="Featured Book 7">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <article class="service-card">
+                      <i class="fa-solid fa-headphones service-icon"></i>
+                      <h3>24 x 7 Services</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </article>
 
-                    <!-- Book 8 -->
-                    <article class="book-card">
-                        <img src="images/book_8.png" alt="Featured Book 8">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <article class="service-card">
+                      <i class="fa-solid fa-tag service-icon"></i>
+                      <h3>Best Deal</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </article>
 
-                    <!-- Book 9 -->
-                    <article class="book-card">
-                        <img src="images/book_9.jpg" alt="Featured Book 9">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <article class="service-card">
+                      <i class="fa-solid fa-lock service-icon"></i>
+                      <h3>Secure Payment</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </article>
 
-                    <!-- Book 10 -->
-                    <article class="book-card">
-                        <img src="images/book_10.png" alt="Featured Book 10">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+              </div>
+          </section>
 
-                    <!-- Book 11 -->
-                    <article class="book-card">
-                        <img src="images/book_11.jpg" alt="Featured Book 11">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+          <!-- ======================= ABOUT Us - Ibraheem ========================== -->
+         <section id="aboutUs">
+              <div class="about-inner">
 
-                    <!-- Book 12 -->
-                    <article class="book-card">
-                        <img src="images/book_12.png" alt="Featured Book 12">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <div class="about-img">
+                      <img src="images/about.png" alt="About illustration">
+                  </div>
 
-                    <!-- Book 13 -->
-                    <article class="book-card">
-                        <img src="images/book_13.png" alt="Featured Book 13">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+                  <div class="about-text">
+                      <h2>About Us</h2>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cumque
+                          dolore sapiente porro autem sit obcaecati, voluptate eveniet incidunt.
+                      </p>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus libero
+                          pariatur repellat maiores iusto, perferendis molestias.
+                      </p>
+                      <button class="btn main-btn">Learn More</button>
+                  </div>
 
-                    <!-- Book 14 -->
-                    <article class="book-card">
-                        <img src="images/book_14.png" alt="Featured Book 14">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
+              </div>
+          </section>
 
-                    <!-- Book 15 -->
-                    <article class="book-card">
-                        <img src="images/book_15.png" alt="Featured Book 15">
-                        <h3>Featured Books</h3>
-                        <p class="book-author">John Deo</p>
-                        <p class="book-genre">Thriller, Horror, Romance</p>
-                        <div class="book-price">
-                            <span class="price-current">$25.50</span>
-                            <span class="price-old">$28.50</span>
-                        </div>
-                        <button class="btn btn-small">Learn More</button>
-                    </article>
-                </div>
-            </div>
-        </section>
+          <!-- ==================== FEATURED BOOKS - Khaled ==================== -->
+          <section id="featured" class="section">
+              <h2 class="section-title">Featured Books</h2>
+              <div class="featured-wrapper">
+                  <div class="featured-row">
+                      <!-- Book 1 -->
+                      <article class="book-card">
+                          <img src="images/book_1.jpg" alt="Featured Book 1">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-        <!-- ===================== NEW ARRIVALS - Khaled ===================== -->
-                <section id="arrivals" class="section">
-            <h2 class="section-title">New Arrivals</h2>
+                      <!-- Book 2 -->
+                      <article class="book-card">
+                          <img src="images/book_2.jpg" alt="Featured Book 2">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-            <div class="books-grid">
-                <!-- Arrival 1 -->
-                <article class="book-card">
-                    <img src="images/arrival_1.jpg" alt="New Arrival 1">
-                    <h3>New Arrival 1</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 3 -->
+                      <article class="book-card">
+                          <img src="images/book_3.jpg" alt="Featured Book 3">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 2 -->
-                <article class="book-card">
-                    <img src="images/arrival_2.jpg" alt="New Arrival 2">
-                    <h3>New Arrival 2</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 4 -->
+                      <article class="book-card">
+                          <img src="images/book_4.jpg" alt="Featured Book 4">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 3 -->
-                <article class="book-card">
-                    <img src="images/arrival_3.jpg" alt="New Arrival 3">
-                    <h3>New Arrival 3</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 5 -->
+                      <article class="book-card">
+                          <img src="images/book_5.jpg" alt="Featured Book 5">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 4 -->
-                <article class="book-card">
-                    <img src="images/arrival_4.jpg" alt="New Arrival 4">
-                    <h3>New Arrival 4</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 6 -->
+                      <article class="book-card">
+                          <img src="images/book_6.jpg" alt="Featured Book 6">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 5 -->
-                <article class="book-card">
-                    <img src="images/arrival_5.jpg" alt="New Arrival 5">
-                    <h3>New Arrival 5</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 7 -->
+                      <article class="book-card">
+                          <img src="images/book_7.png" alt="Featured Book 7">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 6 -->
-                <article class="book-card">
-                    <img src="images/arrival_6.jpg" alt="New Arrival 6">
-                    <h3>New Arrival 6</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 8 -->
+                      <article class="book-card">
+                          <img src="images/book_8.png" alt="Featured Book 8">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 7 -->
-                <article class="book-card">
-                    <img src="images/arrival_7.jpg" alt="New Arrival 7">
-                    <h3>New Arrival 7</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 9 -->
+                      <article class="book-card">
+                          <img src="images/book_9.jpg" alt="Featured Book 9">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 8 -->
-                <article class="book-card">
-                    <img src="images/arrival_8.webp" alt="New Arrival 8">
-                    <h3>New Arrival 8</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 10 -->
+                      <article class="book-card">
+                          <img src="images/book_10.png" alt="Featured Book 10">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 9 -->
-                <article class="book-card">
-                    <img src="images/arrival_9.jpg" alt="New Arrival 9">
-                    <h3>New Arrival 9</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
+                      <!-- Book 11 -->
+                      <article class="book-card">
+                          <img src="images/book_11.jpg" alt="Featured Book 11">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-                <!-- Arrival 10 -->
-                <article class="book-card">
-                    <img src="images/arrival_10.jpg" alt="New Arrival 10">
-                    <h3>New Arrival 10</h3>
-                    <div class="book-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <button class="btn btn-small">Learn More</button>
-                </article>
-            </div>
-        </section>
+                      <!-- Book 12 -->
+                      <article class="book-card">
+                          <img src="images/book_12.png" alt="Featured Book 12">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-        <!-- ====================== REVIEWS - Khaled ========================= -->
-        <section id="reviews" class="section">
-   
-        </section>
+                      <!-- Book 13 -->
+                      <article class="book-card">
+                          <img src="images/book_13.png" alt="Featured Book 13">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-        <!-- ===================== DIGITAL BANNER - Khaled =================== -->
-        <section id="banner" class="banner">
+                      <!-- Book 14 -->
+                      <article class="book-card">
+                          <img src="images/book_14.png" alt="Featured Book 14">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
 
-        </section>
+                      <!-- Book 15 -->
+                      <article class="book-card">
+                          <img src="images/book_15.png" alt="Featured Book 15">
+                          <h3>Featured Books</h3>
+                          <p class="book-author">John Deo</p>
+                          <p class="book-genre">Thriller, Horror, Romance</p>
+                          <div class="book-price">
+                              <span class="price-current">$25.50</span>
+                              <span class="price-old">$28.50</span>
+                          </div>
+                          <button class="btn btn-small">Learn More</button>
+                      </article>
+                  </div>
+              </div>
+          </section>
 
-        <!-- ========================= BLOG - Khaled ========================= -->
+          <!-- ===================== NEW ARRIVALS - Khaled ===================== -->
+                  <section id="arrivals" class="section">
+              <h2 class="section-title">New Arrivals</h2>
 
-        <section id="blog" class="section">
-            
-        </section>
+              <div class="books-grid">
+                  <!-- Arrival 1 -->
+                  <article class="book-card">
+                      <img src="images/arrival_1.jpg" alt="New Arrival 1">
+                      <h3>New Arrival 1</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
 
-    </div> <!-- END container -->
+                  <!-- Arrival 2 -->
+                  <article class="book-card">
+                      <img src="images/arrival_2.jpg" alt="New Arrival 2">
+                      <h3>New Arrival 2</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
 
-        <!-- ========================= Footer - Ibraheem ========================= -->
+                  <!-- Arrival 3 -->
+                  <article class="book-card">
+                      <img src="images/arrival_3.jpg" alt="New Arrival 3">
+                      <h3>New Arrival 3</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
 
-    <footer>
-        
-    </footer>
+                  <!-- Arrival 4 -->
+                  <article class="book-card">
+                      <img src="images/arrival_4.jpg" alt="New Arrival 4">
+                      <h3>New Arrival 4</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
 
-</body>
+                  <!-- Arrival 5 -->
+                  <article class="book-card">
+                      <img src="images/arrival_5.jpg" alt="New Arrival 5">
+                      <h3>New Arrival 5</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
 
+                  <!-- Arrival 6 -->
+                  <article class="book-card">
+                      <img src="images/arrival_6.jpg" alt="New Arrival 6">
+                      <h3>New Arrival 6</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
+
+                  <!-- Arrival 7 -->
+                  <article class="book-card">
+                      <img src="images/arrival_7.jpg" alt="New Arrival 7">
+                      <h3>New Arrival 7</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
+
+                  <!-- Arrival 8 -->
+                  <article class="book-card">
+                      <img src="images/arrival_8.webp" alt="New Arrival 8">
+                      <h3>New Arrival 8</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
+
+                  <!-- Arrival 9 -->
+                  <article class="book-card">
+                      <img src="images/arrival_9.jpg" alt="New Arrival 9">
+                      <h3>New Arrival 9</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
+
+                  <!-- Arrival 10 -->
+                  <article class="book-card">
+                      <img src="images/arrival_10.jpg" alt="New Arrival 10">
+                      <h3>New Arrival 10</h3>
+                      <div class="book-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <button class="btn btn-small">Learn More</button>
+                  </article>
+              </div>
+          </section>
+
+          <!-- ====================== REVIEWS - Khaled ========================= -->
+          <section id="reviews" class="section">
+
+          </section>
+
+          <!-- ===================== DIGITAL BANNER - Khaled =================== -->
+          <section id="banner" class="banner">
+
+          </section>
+
+          <!-- ========================= BLOG - Khaled ========================= -->
+
+          <section id="blog" class="section">
+
+          </section>
+
+      </div> <!-- END container -->
+
+          <!-- ========================= Footer - Ibraheem ========================= -->
+
+      <footer>
+          <div class="footer-inner">
+
+              <!-- Brand Column -->
+              <div class="footer-col footer-brand">
+                  <img src="images/logo.png" alt="Book Store Logo">
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat ipsa aspernatur ad sequi, dolore eveniet vitae quasi. Excepturi ipsa odio impedit sequi at hic velit, minus vero sint Voluptas?
+                  </p>
+              </div>
+
+              <!-- Quick Links Column -->
+              <div class="footer-col">
+                  <h4>Quick Link</h4>
+                  <ul>
+                      <li><a href="#welcome">Home</a></li>
+                      <li><a href="#aboutUs">About</a></li>
+                      <li><a href="#featured">Featured</a></li>
+                      <li><a href="#arrivals">Arrivals</a></li>
+                      <li><a href="#reviews">Reviews</a></li>
+                      <li><a href="#blog">Blog</a></li>
+                  </ul>
+              </div>
+
+              <!-- Contact Info Column -->
+              <div class="footer-col">
+                  <h4>Contact Info</h4>
+                  <ul>
+                      <li><i class="fas fa-phone"></i> +94 12 345 6789</li>
+                      <li><i class="fas fa-phone"></i> +94 32 444 699</li>
+                      <li><i class="fas fa-envelope"></i> bookstore123@gmail.com</li>
+                  </ul>
+              </div>
+
+              <!-- Follow Us Column -->
+              <div class="footer-col">
+                  <h4>Follow Us</h4>
+                  <div class="social-icons">
+                      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+
+              <!-- Newsletter Column -->
+              <div class="footer-col">
+                  <h4>Newsletter</h4>
+                  <form class="newsletter" onsubmit="return false;">
+                      <input type="email" placeholder="Your email id here" required>
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
+          </div>
+
+          <div class="footer-bottom">
+              <p>Design By <span><i class="fa-solid fa-face-grin"></i> <a href="#"> WT Master Code</a></span></p>
+          </div>
+
+      </footer>
+
+
+  </body>
 </html>
-
