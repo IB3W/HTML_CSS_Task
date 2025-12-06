@@ -73,6 +73,137 @@ body {
     padding: 0 1.25rem 3.75rem;
 }
 
+/* ==================== HEADER ==================== */
+header {
+    background-color: var(--bg-white);
+    box-shadow: 0.1em 0.2em 0.4em var(--header-shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-inner {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-gray-color);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    width: 0;
+    height: 0.125rem;
+    background-color: var(--primary);
+    transition: width 0.2s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-black-color);
+}
+
+.nav-icons i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-icons i:hover {
+    transform: scale(1.2);
+    color: var(--primary);
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.35rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 25;
+    transition: all 0.3s ease;
+}
+
+.burger-menu span {
+    display: block;
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: var(--text-black-color);
+    border-radius: 0.125rem;
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0.4rem, 0.4rem);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(0.4rem, -0.4rem);
+}
+
+.btn {
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.main-btn,
+.btn-small {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.main-btn:hover,
+.btn-small:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-small {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.8125rem;
+}
+
 
 
 
@@ -80,6 +211,7 @@ body {
 footer {
     
 }
+
 
 
 
