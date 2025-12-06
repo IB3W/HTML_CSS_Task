@@ -205,12 +205,75 @@ header {
 }
 
 
+/* ==================== WELCOME ==================== */
+#welcome {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7rem 0;
+}
+
+.welcome-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.welcome-left {
+    flex: 1;
+}
+
+.welcome-small {
+    letter-spacing: 0.125rem;
+    font-size: 0.875rem;
+    color: var(--text-placeholder);
+    margin-bottom: 0.75rem;
+}
+
+.welcome-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.welcome-left h1 span {
+    color: var(--primary);
+}
+
+.welcome-text {
+    max-width: 25rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-placeholder);
+    margin-bottom: 1.25rem;
+}
+
+.welcome-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.shelf {
+    padding: 0.75rem 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shelf img {
+    display: block;
+    max-width: 100%;
+}
+
+
 
 
 /* ===================== FOOTER ===================== */
 footer {
     
 }
+
 
 
 
