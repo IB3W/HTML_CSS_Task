@@ -58,18 +58,20 @@ body.dark-mode {
 }
 
 
-* {
-    
-}
-
+/* ==================== BODY ==================== */
 body {
-    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-black-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a {
-    
+/* ==================== CONTAINER ==================== */
+#container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 3.75rem;
 }
-
 
 
 /* ===================== HEADER ===================== */
@@ -116,6 +118,7 @@ section {
 footer {
     
 }
+
 
 
 
