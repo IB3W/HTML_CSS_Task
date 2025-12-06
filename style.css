@@ -311,6 +311,38 @@ header {
 }
 
 
+/* ==================== ABOUT US ==================== */
+#aboutUs {
+    margin-top: 3rem;
+}
+
+.about-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.about-text {
+    margin-left: 3.5rem;
+}
+
+.about-text h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-text p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-placeholder);
+    margin-bottom: 0.75rem;
+}
+
 
 
 
@@ -318,6 +350,7 @@ header {
 footer {
     
 }
+
 
 
 
