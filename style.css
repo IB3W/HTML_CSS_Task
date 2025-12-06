@@ -5,6 +5,58 @@
     padding: 0;
 }
 
+/* ==================== Light Mode Colors ==================== */
+:root {
+    /* Basic Colors */
+    --primary: #089da1;
+    --primary-dark: #047985;
+    
+    /* Background Colors */
+    --bg-white: #ffffff;
+    --bg-gray: #eaeaea;
+    --bg-cyan: #e0f6f7;
+    --bg-input: #d4d4d4;
+    
+    /* Text Colors */
+    --text-black-color: #222222;
+    --text-gray-color: #444444;
+    --text-placeholder: #999999;
+    
+    /* Border Colors */
+    --border-color: #e0e0e0;
+    --card-border-color: #b8f1f5;
+    
+    /* Shadow Colors */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --header-shadow-color: rgba(0, 150, 167, 0.58);
+}
+
+/* ==================== DARK MODE ==================== */
+body.dark-mode {
+    /* Basic Colors */
+    --primary: #0bc5ca;
+    --primary-dark: #089da1;
+    
+    /* Background Colors */
+    --bg-white: #1a1a1a;
+    --bg-gray: #2a2a2a;
+    --bg-cyan: #1a3c3d;
+    --bg-input: #333333;
+    
+    /* Text Colors */
+    --text-black-color: #f5f5f5;
+    --text-gray-color: #d0d0d0;
+    --text-placeholder: #999999;
+    
+    /* Border Colors */
+    --border-color: #333333;
+    --card-border-color: #0bc5ca;
+    
+    /* Shadow Colors */
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --header-shadow-color: rgba(11, 197, 202, 0.3);
+}
+
 
 * {
     
@@ -64,5 +116,6 @@ section {
 footer {
     
 }
+
 
 
