@@ -266,6 +266,51 @@ header {
     max-width: 100%;
 }
 
+/* ==================== SERVICES ==================== */
+#services {
+    margin-top: 2.5rem;
+}
+
+.services-inner {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1 1 10rem;
+    background-color: var(--bg-white);
+    border: 0.125rem solid var(--card-border-color);
+    border-radius: 0.5rem;
+    padding: 1.75rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem var(--shadow-color);
+}
+
+.service-icon {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    font-size: 0.875rem;
+    color: var(--text-placeholder);
+}
+
+
 
 
 
@@ -273,6 +318,7 @@ header {
 footer {
     
 }
+
 
 
 
