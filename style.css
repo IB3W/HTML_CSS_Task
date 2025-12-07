@@ -835,5 +835,162 @@ footer {
     color: var(--primary);
 }
 
+/* ==================== RESPONSIVE ==================== */
+@media (min-width: 64em) {
+    .reviews-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
 
+@media (max-width: 64em) {
+    .reviews-grid {
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+    .welcome-inner {
+        gap: 1.5rem;
+    }
+    .welcome-left h1 {
+        font-size: 2.125rem;
+    }
+    .footer-inner {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .digital-book-banner {
+        padding: 3rem 2rem;
+        min-height: 18rem;
+        justify-content: center;
+    }
+    .digital-book-btn {
+        margin-left: 0;
+        padding: 0.7rem 1.8rem;
+        font-size: 0.875rem;
+    }
+}
 
+@media (max-width: 48em) {
+    .burger-menu {
+        display: flex;
+        order: 2;
+    }
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        order: 1;
+    }
+    .nav-icons {
+        order: 3;
+    }
+    .main-nav {
+        display: none;
+        order: 4;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg-white);
+        border-top: 0.0625rem solid var(--border-color);
+        padding: 1rem 0;
+        gap: 0;
+        box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    }
+    .main-nav.active {
+        display: flex;
+    }
+    .main-nav a {
+        padding: 0.75rem 1.25rem;
+        border-bottom: 0.0625rem solid var(--border-color);
+        transition: background-color 0.3s ease;
+    }
+    .main-nav a:last-child {
+        border-bottom: none;
+    }
+    .main-nav a:hover {
+        background-color: var(--bg-gray);
+    }
+    .main-nav a::after {
+        display: none;
+    }
+    .welcome-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-left,
+    .welcome-right {
+        width: 100%;
+    }
+    .welcome-text {
+        margin: 0 auto 1.25rem;
+    }
+    .services-inner {
+        justify-content: center;
+    }
+    .about-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        max-width: 31.25rem;
+        margin: 0 auto;
+    }
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+    .digital-book-banner {
+        padding: 2.5rem 1.5rem;
+        min-height: 15rem;
+        background-position: left center;
+    }
+    .digital-book-btn {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 30em) {
+    .container {
+        padding: 0 0.75rem 2.5rem;
+    }
+    .header-inner {
+        padding: 0.5rem 1rem;
+        align-items: center;
+    }
+    .logo img {
+        height: 2rem;
+    }
+    .nav-icons {
+        gap: 0.5rem;
+        font-size: 0.8125rem;
+    }
+    .burger-menu span {
+        width: 1.25rem;
+    }
+    .main-nav {
+        justify-content: center;
+        gap: 0.75rem;
+        font-size: 0.8125rem;
+    }
+    .welcome-left h1 {
+        font-size: 1.875rem;
+    }
+    .services-inner {
+        flex-direction: column;
+    }
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+    .book-rating {
+        font-size: 0.75rem;
+    }
+    .digital-book-banner {
+        padding: 2rem 1rem;
+        min-height: 12rem;
+        background-position: left center;
+    }
+    .digital-book-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.75rem;
+        margin-top: 5rem;
+    }
+}
