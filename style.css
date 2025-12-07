@@ -867,4 +867,84 @@ footer {
     }
 }
 
+@media (max-width: 48em) {
+    .burger-menu {
+        display: flex;
+        order: 2;
+    }
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        order: 1;
+    }
+    .nav-icons {
+        order: 3;
+    }
+    .main-nav {
+        display: none;
+        order: 4;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg-white);
+        border-top: 0.0625rem solid var(--border-color);
+        padding: 1rem 0;
+        gap: 0;
+        box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    }
+    .main-nav.active {
+        display: flex;
+    }
+    .main-nav a {
+        padding: 0.75rem 1.25rem;
+        border-bottom: 0.0625rem solid var(--border-color);
+        transition: background-color 0.3s ease;
+    }
+    .main-nav a:last-child {
+        border-bottom: none;
+    }
+    .main-nav a:hover {
+        background-color: var(--bg-gray);
+    }
+    .main-nav a::after {
+        display: none;
+    }
+    .welcome-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-left,
+    .welcome-right {
+        width: 100%;
+    }
+    .welcome-text {
+        margin: 0 auto 1.25rem;
+    }
+    .services-inner {
+        justify-content: center;
+    }
+    .about-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        max-width: 31.25rem;
+        margin: 0 auto;
+    }
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+    .digital-book-banner {
+        padding: 2.5rem 1.5rem;
+        min-height: 15rem;
+        background-position: left center;
+    }
+    .digital-book-btn {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
 
