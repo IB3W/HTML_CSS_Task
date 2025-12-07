@@ -205,4 +205,50 @@
     font-size: 0.875rem;
 }
 
+/* ==================== DIGITAL BOOK BANNER ==================== */
+#digitalBook {
+    margin: 4rem 0 0 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.digital-book-banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 4rem;
+    min-height: 20rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.digital-book-btn {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+.digital-book-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(8, 157, 161, 0.3);
+}
+
+
 
