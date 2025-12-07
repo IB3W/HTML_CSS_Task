@@ -948,3 +948,49 @@ footer {
     }
 }
 
+@media (max-width: 30em) {
+    .container {
+        padding: 0 0.75rem 2.5rem;
+    }
+    .header-inner {
+        padding: 0.5rem 1rem;
+        align-items: center;
+    }
+    .logo img {
+        height: 2rem;
+    }
+    .nav-icons {
+        gap: 0.5rem;
+        font-size: 0.8125rem;
+    }
+    .burger-menu span {
+        width: 1.25rem;
+    }
+    .main-nav {
+        justify-content: center;
+        gap: 0.75rem;
+        font-size: 0.8125rem;
+    }
+    .welcome-left h1 {
+        font-size: 1.875rem;
+    }
+    .services-inner {
+        flex-direction: column;
+    }
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+    .book-rating {
+        font-size: 0.75rem;
+    }
+    .digital-book-banner {
+        padding: 2rem 1rem;
+        min-height: 12rem;
+        background-position: left center;
+    }
+    .digital-book-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.75rem;
+        margin-top: 5rem;
+    }
+}
