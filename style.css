@@ -55,25 +55,6 @@ body.dark-mode {
     /* Shadow Colors */
     --shadow-color: rgba(0, 0, 0, 0.4);
     --header-shadow-color: rgba(11, 197, 202, 0.3);
-/* ==================== SECTIONS ==================== */
-.section {
-    margin-top: 3rem;
-}
-
-.section-title {
-    font-size: 1.75rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-/*  FEATURED BOOKS and NEW ARRIVALS  */
-#featured {
-    margin-top: 3rem;
-}
-
-.featured-wrapper {
-    overflow-x: auto;
-    padding-bottom: 1rem;
 }
 
 /* ==================== BODY ==================== */
@@ -196,6 +177,7 @@ header {
     transform: rotate(-45deg) translate(0.4rem, -0.4rem);
 }
 
+/* ==================== BUTTONS ==================== */
 .btn {
     border: none;
     padding: 0.625rem 1.5rem;
@@ -221,7 +203,6 @@ header {
     padding: 0.5rem 1.25rem;
     font-size: 0.8125rem;
 }
-
 
 /* ==================== WELCOME ==================== */
 #welcome {
@@ -308,6 +289,79 @@ header {
 }
 
 .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem var(--shadow-color);
+}
+
+.service-icon {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    font-size: 0.875rem;
+    color: var(--text-placeholder);
+}
+
+/* ==================== ABOUT US ==================== */
+#aboutUs {
+    margin-top: 3rem;
+}
+
+.about-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.about-text {
+    margin-left: 3.5rem;
+}
+
+.about-text h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-text p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-placeholder);
+    margin-bottom: 0.75rem;
+}
+
+/* ==================== SECTIONS ==================== */
+.section {
+    margin-top: 3rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*  FEATURED BOOKS and NEW ARRIVALS  */
+#featured {
+    margin-top: 3rem;
+}
+
+.featured-wrapper {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
 .featured-wrapper::-webkit-scrollbar {
     height: 0.4rem;
 }
@@ -351,68 +405,6 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 0.75rem 1.5rem var(--shadow-color);
 }
-
-.service-icon {
-    font-size: 2.8rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.service-card h3 {
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
-}
-
-.service-card p {
-    font-size: 0.875rem;
-    color: var(--text-placeholder);
-}
-
-
-/* ==================== ABOUT US ==================== */
-#aboutUs {
-    margin-top: 3rem;
-}
-
-.about-inner {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.about-img img {
-    max-width: 100%;
-    display: block;
-}
-
-.about-text {
-    margin-left: 3.5rem;
-}
-
-.about-text h2 {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
-}
-
-.about-text p {
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: var(--text-placeholder);
-    margin-bottom: 0.75rem;
-}
-
-
-
-
-/* ===================== FOOTER ===================== */
-footer {
-    
-}
-
-
-
-
-
 
 .book-card img {
     width: 100%;
@@ -691,6 +683,3 @@ footer {
 .blog-icons a:hover i {
     transform: scale(1.2);
 }
-
-
-
