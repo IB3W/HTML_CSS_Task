@@ -55,25 +55,6 @@ body.dark-mode {
     /* Shadow Colors */
     --shadow-color: rgba(0, 0, 0, 0.4);
     --header-shadow-color: rgba(11, 197, 202, 0.3);
-/* ==================== SECTIONS ==================== */
-.section {
-    margin-top: 3rem;
-}
-
-.section-title {
-    font-size: 1.75rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-/*  FEATURED BOOKS and NEW ARRIVALS  */
-#featured {
-    margin-top: 3rem;
-}
-
-.featured-wrapper {
-    overflow-x: auto;
-    padding-bottom: 1rem;
 }
 
 /* ==================== BODY ==================== */
@@ -196,6 +177,7 @@ header {
     transform: rotate(-45deg) translate(0.4rem, -0.4rem);
 }
 
+/* ==================== BUTTONS ==================== */
 .btn {
     border: none;
     padding: 0.625rem 1.5rem;
@@ -221,7 +203,6 @@ header {
     padding: 0.5rem 1.25rem;
     font-size: 0.8125rem;
 }
-
 
 /* ==================== WELCOME ==================== */
 #welcome {
@@ -308,6 +289,79 @@ header {
 }
 
 .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem var(--shadow-color);
+}
+
+.service-icon {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    font-size: 0.875rem;
+    color: var(--text-placeholder);
+}
+
+/* ==================== ABOUT US ==================== */
+#aboutUs {
+    margin-top: 3rem;
+}
+
+.about-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.about-text {
+    margin-left: 3.5rem;
+}
+
+.about-text h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-text p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-placeholder);
+    margin-bottom: 0.75rem;
+}
+
+/* ==================== SECTIONS ==================== */
+.section {
+    margin-top: 3rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*  FEATURED BOOKS and NEW ARRIVALS  */
+#featured {
+    margin-top: 3rem;
+}
+
+.featured-wrapper {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
 .featured-wrapper::-webkit-scrollbar {
     height: 0.4rem;
 }
@@ -351,68 +405,6 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 0.75rem 1.5rem var(--shadow-color);
 }
-
-.service-icon {
-    font-size: 2.8rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.service-card h3 {
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
-}
-
-.service-card p {
-    font-size: 0.875rem;
-    color: var(--text-placeholder);
-}
-
-
-/* ==================== ABOUT US ==================== */
-#aboutUs {
-    margin-top: 3rem;
-}
-
-.about-inner {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.about-img img {
-    max-width: 100%;
-    display: block;
-}
-
-.about-text {
-    margin-left: 3.5rem;
-}
-
-.about-text h2 {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
-}
-
-.about-text p {
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: var(--text-placeholder);
-    margin-bottom: 0.75rem;
-}
-
-
-
-
-/* ===================== FOOTER ===================== */
-footer {
-    
-}
-
-
-
-
-
 
 .book-card img {
     width: 100%;
@@ -690,6 +682,157 @@ footer {
 
 .blog-icons a:hover i {
     transform: scale(1.2);
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: var(--bg-gray);
+    margin-top: 3.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-inner {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2.5rem 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+    gap: 3rem;
+    font-size: 0.75rem;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.footer-brand img {
+    width: 6rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+    color: var(--text-placeholder);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer-col h4 {
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: var(--text-black-color);
+    font-size: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 0.1rem;
+    color: var(--text-placeholder);
+    line-height: 1.8;
+}
+
+.footer-col li i {
+    margin-right: 0.5rem;
+    color: var(--text-black-color);
+    width: 1rem;
+}
+
+.footer-col a {
+    color: var(--text-placeholder);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--primary);
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.social-icons a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--border-color);
+    border-radius: 50%;
+    color: var(--text-black-color);
+    transition: all 0.3s;
+    font-size: 0.875rem;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.newsletter p {
+    color: var(--text-placeholder);
+    margin-bottom: 0.75rem;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--bg-input);
+    color: var(--text-black-color);
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter input::placeholder {
+    color: var(--text-placeholder);
+}
+
+.newsletter button {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8125rem;
+    padding: 1rem 0 1.5rem;
+    color: var(--text-placeholder);
+}
+
+.footer-bottom a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--primary-dark);
+}
+
+.footer-bottom span {
+    color: var(--primary);
 }
 
 
