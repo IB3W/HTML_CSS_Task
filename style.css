@@ -835,5 +835,36 @@ footer {
     color: var(--primary);
 }
 
+/* ==================== RESPONSIVE ==================== */
+@media (min-width: 64em) {
+    .reviews-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 64em) {
+    .reviews-grid {
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+    .welcome-inner {
+        gap: 1.5rem;
+    }
+    .welcome-left h1 {
+        font-size: 2.125rem;
+    }
+    .footer-inner {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .digital-book-banner {
+        padding: 3rem 2rem;
+        min-height: 18rem;
+        justify-content: center;
+    }
+    .digital-book-btn {
+        margin-left: 0;
+        padding: 0.7rem 1.8rem;
+        font-size: 0.875rem;
+    }
+}
 
 
