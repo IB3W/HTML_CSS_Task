@@ -135,4 +135,74 @@
     color: var(--primary);
 }
 
+/* ==================== REVIEWS ==================== */
+#reviews {
+    margin-top: 3rem;
+}
+
+#reviews .section-title {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.reviews-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.review-card {
+    position: relative;
+    background-color: var(--bg-white);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.25rem 1.25rem;
+    box-shadow: 0 0.75rem 1.5rem var(--shadow-color);
+    border: 0.125rem solid var(--card-border-color);
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem var(--shadow-color);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.review-img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.75rem;
+}
+
+.quote-icon {
+    position: absolute;
+    right: 0.25rem;
+    top: -0.75rem;
+    font-size: 5rem;
+    color: var(--bg-gray);
+}
+
+.review-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-card p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-placeholder);
+    margin-bottom: 0.75rem;
+}
+
+.stars {
+    color: var(--primary);
+    font-size: 0.875rem;
+}
+
 
